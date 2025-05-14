@@ -28,3 +28,39 @@ A modern and responsive web application to manage room rentals in dormitories or
 
 ## 📁 Folder Structure
 
+src/
+├── app/ # Pages and routing (App Router)
+├── components/
+│ ├── dashboard/ # Dashboard cards & UI
+│ ├── Navbar/ # Sidebar menu
+│ └── ui/ # Input, Button, Select, Card, Sheet, etc.
+├── models/ # Mongoose models (e.g., room.model.js)
+├── lib/ # Utility functions
+├── styles/ # Tailwind config, global styles
+
+
+## 🧩 UI Components
+
+All base UI components are under `src/components/ui/`, inspired by ShadCN:
+
+| Component | Purpose |
+|----------|---------|
+| `Input`, `Label` | Forms |
+| `Button`, `Card`, `Badge` | Dashboard, UI |
+| `Select`, `Sheet`, `Alert` | Forms, Filters, Dialogs |
+| `Progress` | Status bar in Dashboard |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Thevi99/dormitory-management-app.git
+cd dormitory-management-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Add MongoDB connection
+touch .env.local
